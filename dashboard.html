@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>body{font-family:system-ui,Arial;margin:40px}</style>
+</head>
+<body>
+  <h1 id="welcome">Bienvenido</h1>
+  <p><a href="./login.html">Cerrar sesión</a></p>
+  <script>
+    const params=new URLSearchParams(window.location.search);
+    const user=(params.get('user')||'usuario').toLowerCase();
+    const name='Señor '+(user.split('@')[0]||'USUARIO').toUpperCase();
+    document.getElementById('welcome').textContent=`Bienvenido, ${name}, email: ${user}`;
+  </script>
+</body>
+</html>
