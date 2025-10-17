@@ -1,4 +1,4 @@
-**ID del caso:** cypress/videos/pruebas.cy.js.mp4
+**Video:** cypress/videos/pruebas.cy.js.mp4
 
 **ID del caso:** TC-01
 **Nombre del caso:** Login exitoso
